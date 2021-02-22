@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+
+</head>
+<body>
+    <h3> 회원 가입 </h3>
+   <form>
+       <img src="C:\Users\oowwo\Desktop\수영\수영.png" width="100" height="100">
+     <fieldset>
+         <legend>로그인 정보</legend>
+         <ul>
+             <li>
+                <label for="user-name"> 이름 </label>
+                <input type="text "  id="user-name">
+             </li>
+             <li>
+                <label for="mail"> 메일 주소 </label>
+                <input type="email"  id="mail">
+             </li>
+             <li>
+                <label for="homep">블로그 / 홈페이지 </label>
+                <input type="url "  id="homep">
+             </li>
+         </ul>
+      </fieldset>
+      <fieldset>
+          <legend>댓글 창</legend>
+          <form>
+              <label>한 줄 댓글 : <input type="text" size="60"></label>
+          </form>
+      </fieldset>
+      <fieldset>
+      <legend>등록정보</legend>
+      <ul>
+          <li>
+              <label class="reg" for="member"> 참여인원(최대:10) </label>
+              <input type="number" id="member" value="1" min="0" max ="10" step="1">
+          </li>
+          <li>
+              <label class="reg" for="stuff"> 지원물품 </label>
+              <input type="number" id ="stuff" value="1" min="0" max="50" step="5" size="5">
+          </li>
+          <li>
+              <label class="reg" for="satis"> 희망 단계  </label>
+              <input type="range" id ="satis" value="1" min="1" max="3" >
+          </li>
+      </ul>
+      </fieldset>
+      <fieldset>
+          <legend>신청 과목</legend>
+          <p>이 달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+          <label><input type="radio" name="subject" value="speaking"> 회화 </label>
+          <label><input type="radio" name="subject" value="grammar">  문법 </label>
+          <label><input type="radio" name="subject" value="writing">  작문 </label>
+      </fieldset>
+      <fieldset>
+          <legend>메일링</legend>
+          <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요 (복수 선택 가능)</p>
+          <label> <input type="checkbox" name="news" value="mailing1">해외 단신</label>
+          <label> <input type="checkbox" name="news" value="mailing1">5분 회화</label>
+          <label> <input type="checkbox" name="news" value="mailing1">모닝 팝스</label>
+      </fieldset>
+
+      <fieldset>
+          <legend>과 티셔츠 설문 </legend>
+          <P>올해 과 티를 만드려고합니다.ㅎㅎ 원하는 색상을 추천해 주세요.</P>
+          <label>선호 색상 <input type="color" value="#00ff00"> </label>
+      </fieldset>
+
+      <fieldset>
+          <legend>로그인 하기</legend>
+          <label> 아이디 <input type="text" size="15" id="name" autofocus required></label>
+          <label> 비밀번호 <input type="password" size="15"></label>
+          <input type="image" id="butt" src="C:\Users\oowwo\Desktop\수영\img.jpg" width="40" height="40">
+      </fieldset>
+      <br>
+      <form>
+          <input type="button" value="닫기" onclick="window.close()">
+      </form>
+   </form>
+
+   <br><br><br><br>
+
+</body>
+</html>
